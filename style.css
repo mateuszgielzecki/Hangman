@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 4rem 4rem;
+}
+
+.wrapper {
+  background-color: #0a2e2c;
+  text-align: center;
+  position: relative;
+  height: 90vh;
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #fff;
+  color: #fff;
+}
+
+.information {
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  font-size: 150%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+#mistakes,
+#maxWrong {
+  font-weight: bold;
+}
+
+.question {
+  margin-top: 2rem;
+}
+
+.question__text,
+.question__answer {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.question__answer {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.keys {
+  margin-top: 7rem;
+}
+
+.keys span {
+  font-size: 2rem;
+  padding: 2rem 2rem;
+  background-color: #0000ffb9;
+  color: #fff;
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.keys__btn {
+  margin-top: 5rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
