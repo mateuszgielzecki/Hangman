@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-  background-color: #0a2e2c;
+  background-color: #082c2a;
   text-align: center;
   position: relative;
   height: 90vh;
@@ -25,21 +25,21 @@ body {
 }
 
 .heading {
-  text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
-  border-bottom: 0.2rem solid #fff;
+  border-bottom: 0.1rem solid #fff;
   color: #fff;
 }
 
 .information {
-  position: absolute;
-  right: 5%;
+  position: fixed;
+  right: 10%;
   top: 15%;
-  font-size: 150%;
+  font-size: 2rem;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   color: #fff;
+  background-color: #ffffff44;
 }
 
 #mistakes,
@@ -47,14 +47,10 @@ body {
   font-weight: bold;
 }
 
-.question {
-  margin-top: 2rem;
-}
-
 .question__text,
 .question__answer {
-  margin-top: 2rem;
-  font-size: 2rem;
+  /* margin-top: 2rem; */
+  font-size: 2.5rem;
   color: #fff;
 }
 
@@ -64,8 +60,15 @@ body {
   font-weight: bold;
 }
 
+.question__bgc {
+  background: url(img/0.jpg);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .keys {
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .keys span {
@@ -80,10 +83,20 @@ body {
 
 .keys__btn {
   margin-top: 5rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
   background-color: #fff;
   border: none;
-  color: #000;
+  color: #082c2a;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.keys__btn:hover {
+  background-color: #082c2a;
+  border: 0.1rem solid #fff;
+  color: #fff;
 }
