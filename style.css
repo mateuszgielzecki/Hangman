@@ -49,7 +49,7 @@ body {
 
 .question__text,
 .question__answer {
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
   font-size: 2.5rem;
   color: #fff;
 }
@@ -71,22 +71,38 @@ body {
   margin-top: 2rem;
 }
 
-.keys span {
-  font-size: 2rem;
-  padding: 2rem 2rem;
-  background-color: #0000ffb9;
-  color: #fff;
+.keys-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 20rem;
+}
+
+.letter {
+  width: 6rem;
+  margin: 1rem 2rem;
   border-radius: 0.3rem;
-  margin-right: 2rem;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  color: #fff;
   cursor: pointer;
+  background-color: #0000ffb9;
+  border: 1px solid #0000ffb9;
+  outline: none;
+}
+
+.letter:hover {
+  border: 1px solid #fff;
+}
+
+.letter:active {
+  transform: scale(1.1);
 }
 
 .keys__btn {
-  margin-top: 5rem;
   padding: 1.5rem 2.5rem;
   font-size: 1.5rem;
   border-radius: 0.3rem;
-  background-color: #fff;
   border: none;
   color: #082c2a;
   text-transform: uppercase;
@@ -99,4 +115,8 @@ body {
   background-color: #082c2a;
   border: 0.1rem solid #fff;
   color: #fff;
+}
+
+.keys__btn:active {
+  transform: scale(1.1);
 }
