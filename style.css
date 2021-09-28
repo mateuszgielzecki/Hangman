@@ -118,6 +118,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
+  z-index: 1000000;
 }
 
 .keys__btn:hover {
@@ -128,4 +129,32 @@ body {
 
 .keys__btn:active {
   transform: scale(1.1);
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  visibility: hidden;
+}
+
+.result-win {
+  background-image: linear-gradient(to right bottom, green, rgb(14, 165, 1));
+}
+
+.result-lost {
+  background-image: linear-gradient(to right bottom, red, rgb(165, 1, 56));
+}
+
+.result-lost p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 70px;
+  color: #fff;
+  font-weight: normal;
 }
